@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <main>
+        <form action="" id="formulario">
+            <div>
+                <label for="">Nombres y apellidos</label>
+                <div>
+                    <input type="text" id="nombre" required>    
+                </div>
+            </div>
+            <div>
+                <label for="">Tipo documento</label>
+                <div>
+                    <select name="" id="tipoDoc">
+                        <option value="">Seleccione una opcion</option>
+                        <option value="1">Tarjeta de identidad</option>
+                        <option value="2">Cedula de ciudadania</option>
+                        <option value="3">Cedula de extranjeria</option>
+                        <option value="4">NIT</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="">Numero de documento</label>
+                <div>
+                    <input type="number" id="documento"required>
+                </div>
+            </div>
+            <div>
+                <label for="">Fecha de nacimiento</label>
+                <div>
+                    <input type="date" id="fechaNac" required>
+                </div>
+            </div>
+            <div>
+                <input type="range" name="" id="rango">
+            </div>
+            <div>
+                <label for="">Genero</label>
+                <div>
+                    <select name="" id="genero">
+                        <option value="">Seleccione una opcion</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Femenino</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="">Correo electronico</label>
+                <div>
+                    <input type="email" id="email" required
+                    >
+                </div>
+            </div>
+            <div>
+                <label for="">Contraseña</label>
+                <div>
+                    <input type="password" id="password" required>
+                </div>
+            </div>
+            <div>
+                <label for="">Telefono</label>
+                <div>
+                    <input type="number" id="telefono" required>
+                </div>
+            </div>
+            <div>
+                <h4>Selecciona tu hobbie</h4>
+            
+                <div>
+                    <input type="radio" name="hobby" value="musica">
+                    <label for="">Musica</label>
+                </div>
+                <div>
+                    <input type="radio" name="hobby" value="deporte">
+                    <label for="">Deporte</label>
+                </div>
+                <div>
+                    <input type="radio" name="hobby" value="literatura">
+                    <label for="">Literatura</label>
+                </div>
+            </div>
+
+            <div>
+                <h4>selecciona tus habilidades</h4>
+                <div>
+                    <input type="checkbox" name="habilidades" value="cantar">
+                    <label for="">Cantar</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="habilidades" value="comer">
+                    <label for="">Comer</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="habilidades" value="bailar">
+                    <label for="">Bailar</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="habilidades" value="correr">
+                    <label for="">Correr</label>
+                </div>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+            <div>
+                <button id="restablecer">Restablecer</button>
+            </div>
+            <div>
+                <button id="deshabilitar">Deshabilitar</button>
+            </div>
+            <div>
+                <button id="habilitar">Habilitar</button>
+            </div>
+            <div>
+                <button id="editarHabilitacion">Editar habilitacion</button>
+            </div>
+        </form>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/funciones.js"></script>
+</body>
+</html>
