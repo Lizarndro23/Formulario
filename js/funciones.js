@@ -41,6 +41,13 @@ $(document).ready(function(){
         e.preventDefault();
         validar.formDisableEdit();
     });
+    $("#formulario").submit(function(event) {
+        if ($('input[name="hobby"]:checked').length === 0) {
+            alert("Debe seleccionar una opción.");
+            event.preventDefault(); // Evita que se envíe el formulario
+            $("#"+id).addClass('error');
+        }
+    });
 
 });
 
@@ -98,6 +105,15 @@ class Formulario {
             $("#"+id).val('');
             $("#"+id).addClass('error');
         }
+    }
+    validarCheckBox(id){
+        $('input[type=checkbox]').on('change', function() {
+            if ($(this).is(':checked') ) {
+                console.log("Checkbox " + $(this).prop("id") +  " (" + $(this).val() + ") => Seleccionado");
+            } else {
+                console.log("Checkbox " + $(this).prop("id") +  " (" + $(this).val() + ") => Deseleccionado");
+            }
+        });
     }
 
     formClear(){
